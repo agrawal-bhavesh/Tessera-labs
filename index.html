@@ -1,0 +1,321 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Tessera Labs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Tessera Labs, home">
+      <svg viewBox="0 0 26 26" role="img" aria-hidden="true">
+        <rect x="1" y="1" width="11" height="11" rx="2" fill="var(--build)"/>
+        <rect x="14" y="1" width="11" height="11" rx="2" fill="var(--data)"/>
+        <rect x="1" y="14" width="11" height="11" rx="2" fill="var(--attack)"/>
+        <rect x="14.75" y="14.75" width="9.5" height="9.5" rx="1.5" fill="none" stroke="var(--ink)" stroke-width="1.5"/>
+      </svg>
+      Tessera Labs
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#terms">How we work</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-primary btn-small" href="#contact">Book a call</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Software &middot; Data &middot; Security</p>
+        <h1><span class="b">Software that ships.</span> <span class="d">Data that decides.</span> <span class="a">Security that holds.</span></h1>
+        <p class="lede">Tessera Labs is a small senior team. We build products, turn scattered data into decisions, and test your systems the way an attacker would. One scope, one team, one invoice.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#contact">Book a scoping call</a>
+          <a class="btn" href="#services">See what we do</a>
+        </div>
+        <p class="commit">
+          <span>Fixed-scope quotes</span>
+          <span>Reply in one business day</span>
+          <span>NDA on request</span>
+        </p>
+      </div>
+
+      <aside class="report" aria-label="Sample deliverables">
+        <div class="report-top"><span>Sample pentest finding</span><span>TL-014</span></div>
+        <div class="report-body">
+          <div class="sev"><span class="sev-pill">CRITICAL 9.1</span><span class="eyebrow">Web API &middot; OWASP A01</span></div>
+          <h2>Any visitor can read another tenant&rsquo;s invoices</h2>
+          <p class="vector">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N</p>
+          <ol class="steps">
+            <li><i></i>Found</li>
+            <li><i></i>Fixed</li>
+            <li><i></i>Retested</li>
+          </ol>
+        </div>
+        <div class="mini">
+          <div><b>184 ms</b><span>API p95 latency</span></div>
+          <div><b>0.91</b><span>Churn model AUC</span></div>
+        </div>
+        <p class="report-note">Illustrative figures that show how we report.</p>
+      </aside>
+    </div>
+  </div>
+
+  <section id="services" class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Services</p>
+        <h2>Three disciplines that fit together</h2>
+        <p>Most teams hire one firm to build, another to analyze and a third to test. Working across all three means the thing we build is the thing we measure and the thing we try to break.</p>
+      </div>
+
+      <article class="service s-build">
+        <div>
+          <p class="tag">Build</p>
+          <h3>Software development</h3>
+        </div>
+        <div>
+          <p class="desc">Web apps, APIs and mobile backends, built in two-week sprints with a working release at the end of every one.</p>
+          <ul>
+            <li>Product MVPs and internal tools</li>
+            <li>API design and third-party integrations</li>
+            <li>Cloud setup, CI/CD and monitoring</li>
+            <li>Rescue and review of stalled codebases</li>
+          </ul>
+        </div>
+        <div>
+          <p class="stack-label">Typical stack</p>
+          <ul class="chips">
+            <li>TypeScript</li><li>React</li><li>Next.js</li><li>Node.js</li><li>Python</li><li>Go</li><li>PostgreSQL</li><li>AWS</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="service s-data">
+        <div>
+          <p class="tag">Analyze</p>
+          <h3>Data analytics</h3>
+        </div>
+        <div>
+          <p class="desc">Pipelines, dashboards and models that answer a specific question your team is asking this quarter.</p>
+          <ul>
+            <li>Warehouse design and ETL/ELT pipelines</li>
+            <li>Dashboards that finance and operations open daily</li>
+            <li>Forecasting, churn and segmentation models</li>
+            <li>Data quality tests and living documentation</li>
+          </ul>
+        </div>
+        <div>
+          <p class="stack-label">Typical stack</p>
+          <ul class="chips">
+            <li>SQL</li><li>dbt</li><li>Airflow</li><li>BigQuery</li><li>Snowflake</li><li>Python</li><li>Metabase</li><li>Power BI</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="service s-attack">
+        <div>
+          <p class="tag">Attack</p>
+          <h3>Penetration testing</h3>
+        </div>
+        <div>
+          <p class="desc">Authorized, scoped testing of web apps, APIs, cloud accounts and networks. You get exploit-proven findings ranked by CVSS, fix guidance for developers and a free retest.</p>
+          <ul>
+            <li>Web and API testing against OWASP Top 10 and ASVS</li>
+            <li>Cloud configuration review for AWS, GCP and Azure</li>
+            <li>Internal and external network testing</li>
+            <li>Full report for engineers, one page for leadership</li>
+          </ul>
+        </div>
+        <div>
+          <p class="stack-label">Typical toolkit</p>
+          <ul class="chips">
+            <li>Burp Suite</li><li>Nmap</li><li>Metasploit</li><li>Nuclei</li><li>ScoutSuite</li><li>Custom scripts</li>
+          </ul>
+        </div>
+      </article>
+
+      <div class="also">
+        <span>Also available:</span>
+        <ul class="chips"><li>DevOps &amp; CI/CD</li><li>QA automation</li><li>Security code review</li><li>Technical due diligence</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Process</p>
+        <h2>From first call to handover in four steps</h2>
+        <p>Every engagement has a written scope, a fixed price and a named person you can message directly.</p>
+      </div>
+      <ol class="process">
+        <li>
+          <p class="when">Days 1&ndash;3</p>
+          <h3>Scope</h3>
+          <p>A 30-minute call, then a written scope and quote. For security work, signed authorization comes before any testing starts.</p>
+        </li>
+        <li>
+          <p class="when">Week 1 onward</p>
+          <h3>Build or test</h3>
+          <p>Two-week sprints for software and data, a fixed test window for security. You get a demo or findings digest every week.</p>
+        </li>
+        <li>
+          <p class="when">At delivery</p>
+          <h3>Hand over</h3>
+          <p>A tagged release, a live dashboard or a full report with a walkthrough. Source, queries and credentials go to you.</p>
+        </li>
+        <li>
+          <p class="when">30 days after</p>
+          <h3>Retest and support</h3>
+          <p>We retest every fixed vulnerability and handle bugs found in the first month at no extra cost.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="terms" class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">How we work</p>
+        <h2>Terms we put in every contract</h2>
+      </div>
+      <div class="terms">
+        <div>
+          <h3>You own everything</h3>
+          <p>Code, models, queries, reports and infrastructure live in your accounts from day one. No lock-in, no license fees.</p>
+        </div>
+        <div>
+          <h3>Written authorization first</h3>
+          <p>We test only systems you own or are cleared to test, inside an agreed scope, window and set of rules of engagement.</p>
+        </div>
+        <div>
+          <h3>Fixed scope, fixed price</h3>
+          <p>You approve the quote before work begins. If scope changes, we tell you the cost before we change anything.</p>
+        </div>
+        <div>
+          <h3>Confidential by default</h3>
+          <p>Your data and findings stay inside the project. We sign an NDA on request and delete test data when we finish.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">FAQ</p>
+        <h2>Questions we hear on the first call</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>How big is a typical project?</summary>
+          <p>Software MVPs usually run six to twelve weeks. Analytics projects run three to eight weeks. A web application penetration test takes one to two weeks of testing plus a few days for the report.</p>
+        </details>
+        <details>
+          <summary>Will a penetration test disrupt our production systems?</summary>
+          <p>We agree on the rules of engagement first. Where possible we test a staging copy, and on production we avoid destructive actions and throttle automated scans. We tell you before anything risky.</p>
+        </details>
+        <details>
+          <summary>Can you work with our existing team and codebase?</summary>
+          <p>Yes. We join your repository, tools and standups, follow your conventions and write code your engineers can maintain after we leave.</p>
+        </details>
+        <details>
+          <summary>What do we need to provide for a data project?</summary>
+          <p>Read access to the source systems, one person who understands the business question, and a few hours a week for review. We handle the rest, including documentation.</p>
+        </details>
+        <details>
+          <summary>Do you offer ongoing support after delivery?</summary>
+          <p>Every project includes 30 days of support. After that, you can choose a monthly retainer for maintenance, monitoring or recurring security tests, or simply call us when you need us.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="band">
+    <div class="wrap contact-grid">
+      <div class="side">
+        <p class="eyebrow">Contact</p>
+        <h2>Tell us what you&rsquo;re working on</h2>
+        <p>Share a few details and we&rsquo;ll propose a scope, a timeline and a fixed price. Prefer email? Write to us directly.</p>
+        <div class="mailbox">
+          <span class="eyebrow">Email</span>
+          <code id="mailAddress">hello@tesseralabs.example</code>
+        </div>
+      </div>
+
+      <div>
+        <form id="contactForm" novalidate>
+          <div class="row">
+            <label for="name">Name
+              <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="nameErr">
+              <span class="err" id="nameErr" aria-live="polite"></span>
+            </label>
+            <label for="email">Work email
+              <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="emailErr">
+              <span class="err" id="emailErr" aria-live="polite"></span>
+            </label>
+          </div>
+          <div class="row">
+            <label for="service">What do you need?
+              <select id="service" name="service">
+                <option>Software development</option>
+                <option>Data analytics</option>
+                <option>Penetration testing</option>
+                <option>A mix of these</option>
+                <option>Not sure yet</option>
+              </select>
+            </label>
+            <label for="timeline">Timeline
+              <select id="timeline" name="timeline">
+                <option>As soon as possible</option>
+                <option>Within a month</option>
+                <option>In one to three months</option>
+                <option>Just exploring</option>
+              </select>
+            </label>
+          </div>
+          <label for="message">Project details
+            <textarea id="message" name="message" required aria-describedby="messageErr" placeholder="What are you building, measuring or protecting? Anything that helps us scope it."></textarea>
+            <span class="err" id="messageErr" aria-live="polite"></span>
+          </label>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Prepare my brief</button>
+            <span class="fine">This page doesn&rsquo;t send anything. You&rsquo;ll get a ready-to-send brief to copy into an email.</span>
+          </div>
+        </form>
+
+        <div class="brief" id="brief" hidden>
+          <h3>Your brief is ready</h3>
+          <label for="briefText">Copy this into an email to <span id="briefTo">hello@tesseralabs.example</span>
+            <textarea id="briefText" readonly></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="button" id="copyBtn">Copy brief</button>
+            <button class="btn" type="button" id="editBtn">Edit details</button>
+          </div>
+          <p class="status" id="copyStatus" role="status"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="year">2026</span> Tessera Labs. Software, data and security.</span>
+    <span class="mark" aria-hidden="true"><i style="background:var(--build)"></i><i style="background:var(--data)"></i><i style="background:var(--attack)"></i></span>
+  </div>
+</footer>
+<script src="script.js" defer></script>
+</body>
+</html>
